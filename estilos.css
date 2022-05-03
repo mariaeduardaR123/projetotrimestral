@@ -1,0 +1,92 @@
+orpo {
+    margem :  0 ;
+}
+
+ul {
+    estilo de lista : nenhum;
+    preenchimento :  0 ;
+    estouro : oculto;
+    transição : todos 0,5 s ;
+}
+
+navegação {
+    cor de fundo :  # 161616 ;
+    preenchimento :  0  20 px ;
+    justificar-conteúdo : espaço entre;
+    align-items : centro;
+}
+
+h1 ,
+p {
+    cor :  #FFF ; _
+}
+
+navegação ,
+ul {
+    exibição : flexível;
+    flex-direction : linha;
+}
+
+li {
+    preenchimento :  0  20 px ;
+}
+
+h1 {
+    margem :  0 ;
+    preenchimento :  10px ; _
+}
+
+botão {
+    cor de fundo : transparente;
+    borda : nenhuma;
+    cor :  #FFF ; _
+    tamanho da fonte :  36 px ;
+    posição : absoluta;
+    direita :  10px ; _
+    topo :  10px ; _
+    exibição : nenhum;
+}
+
+li : pairar ,
+h1 : pairar ,
+botão : pairar {
+    cursor : ponteiro;
+    opacidade :  0,8 ;
+    cor de fundo :  rgba ( 255 ,  255 ,  255 ,  0,2 );
+}
+
+botão : foco ~ ul {
+    altura :  260px ; _
+}
+
+@media ( largura máxima :  700 px ) {
+
+    navegação ,
+    ul {
+        flex-direction : coluna;
+    }
+
+    ul {
+        text-align : centro;
+        margem :  0 ;
+        altura :  0 ;
+    }
+
+    navegação {
+        preenchimento :  0 ;
+        align-items : flex-start;
+    }
+
+    h1 {
+        margem :  10px ; _
+    }
+
+    botão {
+        exibição : flexível;
+    }
+
+    li ,
+    ul {
+        largura :  100 % ;
+    }
+}
